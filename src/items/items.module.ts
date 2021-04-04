@@ -1,7 +1,8 @@
+/* istanbul ignore file */
 import { Module } from '@nestjs/common';
 import { MongooseModule } from '@nestjs/mongoose';
 import { ItemsController } from './items.controller';
-import { ItemsService } from './items.service';
+import { ItemsService } from './services/items.service';
 import { ItemSchema } from './schemas/item.schema';
 
 @Module({

@@ -1,11 +1,10 @@
 import { getModelToken } from '@nestjs/mongoose';
 import { Test, TestingModule } from '@nestjs/testing';
-import { ItemsController } from './items.controller';
-import { ItemsService } from './services/items.service';
+import { ItemsController } from '../items.controller';
+import { mockItemsModel } from '../mocks/items.mocks';
+import { ItemsService } from './items.service';
 
-import { mockItemsModel } from './mocks/items.mocks';
-
-describe('ItemsController', () => {
+describe('ItemsService', () => {
   let itemsController: ItemsController;
   let itemsService: ItemsService;
 

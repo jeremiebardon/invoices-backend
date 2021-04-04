@@ -1,18 +1,14 @@
-import {
-  Body,
-  Controller,
-  Get,
-  Param,
-  Post,
-  Put,
-  Delete,
-} from '@nestjs/common';
+import { Body, Controller, Get, Param, Post, Put, Delete } from '@nestjs/common';
 
 // DTO
 import { CreateItemDto } from './dto/create-item.dto';
 import { UpdateItemDto } from './dto/update-item.dto';
+
+// Interface
 import { Item } from './interfaces/item.interface';
-import { ItemsService } from './items.service';
+
+// Services
+import { ItemsService } from './services/items.service';
 
 @Controller('items')
 export class ItemsController {
